@@ -1,6 +1,6 @@
 # Capx Compose
 
-[![Capx Compose](./banner.png)](https://www.loom.com/share/42f661f237a54e2e80e4560a8f69cbb1)
+[![Capx Compose](./assets/banner.png)](https://www.loom.com/share/42f661f237a54e2e80e4560a8f69cbb1)
 
 A modular CLI tool for scaffolding AI apps with pre-configured integrations and best practices. Built for the AI IDE era with working examples you can import to Cursor, Claude, or any AI editor to start building immediately.
 
