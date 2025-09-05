@@ -1,0 +1,49 @@
+{
+  "name": "privy",
+  "displayName": "Privy Auth & Wallet",
+  "description": "Simple email authentication and embedded wallet functionality using Privy",
+  "packages": [
+    { "name": "@privy-io/react-auth", "version": "^1.84.0" },
+    { "name": "@privy-io/wagmi", "version": "^0.2.12" },
+    { "name": "wagmi", "version": "^2.0.0" },
+    { "name": "viem", "version": "^2.0.0" },
+    { "name": "next", "version": "^14.0.0" },
+    { "name": "react", "version": "^18.0.0" },
+    { "name": "react-dom", "version": "^18.0.0" },
+    { "name": "class-variance-authority", "version": "^0.7.1" },
+    { "name": "clsx", "version": "^2.0.0" },
+    { "name": "tailwind-merge", "version": "^2.0.0" },
+    { "name": "lucide-react", "version": "^0.263.1" },
+    { "name": "@radix-ui/react-slot", "version": "^1.1.0" },
+    { "name": "@radix-ui/react-tabs", "version": "^1.1.0" },
+    { "name": "@radix-ui/react-separator", "version": "^1.1.0" },
+    { "name": "@radix-ui/react-label", "version": "^2.1.0" }
+  ],
+  "devPackages": [
+    { "name": "@types/node", "version": "^20.0.0" },
+    { "name": "@types/react", "version": "^18.0.0" },
+    { "name": "@types/react-dom", "version": "^18.0.0" },
+    { "name": "typescript", "version": "^5.0.0" },
+    { "name": "tailwindcss", "version": "^3.3.0" },
+    { "name": "tailwindcss-animate", "version": "^1.0.7" },
+    { "name": "autoprefixer", "version": "^10.4.16" },
+    { "name": "postcss", "version": "^8.4.31" }
+  ],
+  "envVars": [
+    {
+      "name": "NEXT_PUBLIC_PRIVY_APP_ID",
+      "description": "Your Privy App ID from dashboard.privy.io",
+      "required": true
+    }
+  ],
+  "files": {
+    "privy-config.tsx": "src/lib/privy/config.tsx",
+    "privy-auth.ts": "src/lib/privy/auth.ts",
+    "privy-wallet.ts": "src/lib/privy/wallet.ts",
+    "privy-index.ts": "src/lib/privy/index.ts",
+    "auth-example.tsx": "src/components/AuthExample.tsx",
+    "wallet-example.tsx": "src/components/WalletExample.tsx",
+    "example.tsx": "src/pages/privy.tsx",
+    "setup.md": "setup.md"
+  }
+} 

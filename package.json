@@ -1,0 +1,196 @@
+{
+  "name": "capx-compose",
+  "version": "0.1.1",
+  "description": "🚀 CLI tool to scaffold AI application projects with best practices and templates for Supabase, Vercel AI, Firebase, Solana, and EVM development. Create production-ready AI apps in seconds.",
+  "main": "lib/index.js",
+  "bin": {
+    "capx-compose": "./bin/capx-compose.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test",
+    "bin": "bin"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "scripts/",
+    "templates/",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "start": "node bin/capx-compose.js",
+    "dev": "node bin/capx-compose.js",
+    "build": "npm run clean && npm run test:coverage",
+    "build:prod": "npm run clean && npm run package:validate",
+    "clean": "rimraf coverage/ *.tgz *-test-project/ *-validation-*/ test-*/ *-test/",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "test:unit": "jest --testPathPattern=test/ --testNamePattern='(unit|Unit)'",
+    "test:integration": "jest --testPathPattern=test/integration",
+    "test:templates": "jest --testPathPattern=test/template-validation",
+    "lint": "echo 'Linting passed - no linter configured yet'",
+    "lint:fix": "echo 'Lint fix passed - no linter configured yet'",
+    "format": "echo 'Formatting passed - no formatter configured yet'",
+    "format:check": "echo 'Format check passed - no formatter configured yet'",
+    "package:create": "npm pack",
+    "package:validate": "npm pack --dry-run",
+    "package:test": "npm run package:create && npm run package:install:test && npm run package:cleanup",
+    "package:install:test": "npm install -g ./capx-compose-*.tgz && capx-compose --version && capx-compose --help && npm uninstall -g capx-compose",
+    "package:cleanup": "rimraf *.tgz",
+    "release:patch": "npm version patch && npm run release:publish",
+    "release:minor": "npm version minor && npm run release:publish", 
+    "release:major": "npm version major && npm run release:publish",
+    "release:publish": "git push origin main --tags && npm publish",
+    "release:dry": "npm run build:prod && npm run package:validate && echo '✅ Release dry run completed'",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:fix": "npm audit fix",
+    "deps:check": "npm outdated",
+    "deps:update": "npm update",
+    "ci": "npm run clean && npm ci && npm run build && npm run security:audit",
+    "prepublishOnly": "npm run clean",
+    "postpack": "echo '✅ Package created successfully!'",
+    "version": "npm run build && git add -A",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "artificial-intelligence",
+    "scaffold",
+    "scaffolding",
+    "generator",
+    "template",
+    "boilerplate",
+    "starter",
+    "nodejs",
+    "nextjs",
+    "react",
+    "typescript",
+    "supabase",
+    "vercel-ai",
+    "firebase",
+    "solana",
+    "ethereum",
+    "evm",
+    "web3",
+    "blockchain",
+    "machine-learning",
+    "ml",
+    "openai",
+    "gpt",
+    "chatbot",
+    "project-generator",
+    "development-tools",
+    "developer-tools",
+    "capx-compose",
+    "tailwind",
+    "eslint",
+    "full-stack",
+    "backend",
+    "frontend",
+    "database",
+    "auth",
+    "authentication",
+    "real-time",
+    "serverless",
+    "edge-functions",
+    "api",
+    "rest",
+    "graphql",
+    "postgresql",
+    "redis",
+    "kv-store",
+    "caching",
+    "performance",
+    "production-ready"
+  ],
+  "author": {
+    "name": "Capx Team",
+    "email": "team@capx.ai",
+    "url": "https://capx.ai"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/capx-ai/capx-compose.git"
+  },
+  "homepage": "https://github.com/capx-ai/capx-compose#readme",
+  "bugs": {
+    "url": "https://github.com/capx-ai/capx-compose/issues",
+    "email": "support@capx.ai"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/capx-ai"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=7.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "type": "commonjs",
+  "preferGlobal": true,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "chalk": "^4.1.2",
+    "commander": "^9.5.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "semver": "^7.7.2"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0",
+    "rimraf": "^5.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["<rootDir>/test/setup.js"],
+    "testTimeout": 30000,
+    "forceExit": true,
+    "detectOpenHandles": true,
+    "maxWorkers": 2,
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "!lib/**/*.test.js",
+      "!**/node_modules/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 65,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "coverageReporters": ["text", "lcov", "html"],
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ],
+    "verbose": false,
+    "silent": false,
+    "clearMocks": true,
+    "resetMocks": true,
+    "restoreMocks": true
+  }
+}

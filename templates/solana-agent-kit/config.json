@@ -1,0 +1,52 @@
+{
+  "name": "solana-agent-kit",
+  "displayName": "Solana Agent Kit",
+  "description": "Advanced Solana AI agent for token operations, swaps, balance checks, and DeFi interactions on Solana",
+  "packages": [
+    { "name": "solana-agent-kit", "version": "2.0.6" },
+    { "name": "@solana-agent-kit/plugin-token", "version": "2.0.6" },
+    { "name": "@solana/web3.js", "version": "^1.98.0" },
+    { "name": "bs58", "version": "^5.0.0" },
+    { "name": "zod", "version": "3.23.8" },
+    { "name": "ai", "version": "~4.0.3" },
+    { "name": "@ai-sdk/openai", "version": "~1.0.4" },
+    { "name": "next", "version": "^14.0.0" },
+    { "name": "react", "version": "^18.0.0" },
+    { "name": "react-dom", "version": "^18.0.0" },
+    { "name": "class-variance-authority", "version": "^0.7.1" },
+    { "name": "clsx", "version": "^2.0.0" },
+    { "name": "tailwind-merge", "version": "^2.0.0" },
+    { "name": "lucide-react", "version": "^0.263.1" },
+    { "name": "@radix-ui/react-slot", "version": "^1.1.0" }
+  ],
+  "devPackages": [
+    { "name": "@types/node", "version": "^20.0.0" },
+    { "name": "@types/react", "version": "^18.0.0" },
+    { "name": "@types/react-dom", "version": "^18.0.0" },
+    { "name": "typescript", "version": "^5.0.0" },
+    { "name": "tailwindcss", "version": "^3.3.0" },
+    { "name": "tailwindcss-animate", "version": "^1.0.7" },
+    { "name": "autoprefixer", "version": "^10.4.16" },
+    { "name": "postcss", "version": "^8.4.31" }
+  ],
+  "envVars": [
+    {
+      "name": "OPENAI_API_KEY",
+      "description": "OpenAI API key for the Solana AI agent"
+    },
+    {
+      "name": "RPC_PROVIDER_URL",
+      "description": "Solana RPC endpoint URL (e.g., https://api.devnet.solana.com for devnet)"
+    },
+    {
+      "name": "SOLANA_PRIVATE_KEY",
+      "description": "Your Solana private key in base58 format (keep this secure!)"
+    }
+  ],
+  "files": {
+    "example.tsx": "src/pages/solana-agent-kit.tsx",
+    "api-solana-agent.ts": "src/pages/api/solana-agent.ts",
+    "agent-config.ts": "src/utils/agent-config.ts",
+    "README.md": "README.md"
+  }
+}

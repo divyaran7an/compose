@@ -1,0 +1,46 @@
+{
+  "name": "sui",
+  "displayName": "SUI Network",
+  "description": "SUI blockchain integration with wallet connection and network support",
+  "packages": [
+    { "name": "@mysten/sui", "version": "^1.16.0" },
+    { "name": "@mysten/dapp-kit", "version": "^0.14.40" },
+    { "name": "@tanstack/react-query", "version": "^5.62.11" },
+    { "name": "next", "version": "^14.0.0" },
+    { "name": "react", "version": "^18.0.0" },
+    { "name": "react-dom", "version": "^18.0.0" },
+    { "name": "class-variance-authority", "version": "^0.7.1" },
+    { "name": "clsx", "version": "^2.0.0" },
+    { "name": "tailwind-merge", "version": "^2.0.0" },
+    { "name": "lucide-react", "version": "^0.263.1" },
+    { "name": "@radix-ui/react-slot", "version": "^1.1.0" }
+  ],
+  "devPackages": [
+    { "name": "@types/node", "version": "^20.0.0" },
+    { "name": "@types/react", "version": "^18.0.0" },
+    { "name": "@types/react-dom", "version": "^18.0.0" },
+    { "name": "typescript", "version": "^5.0.0" },
+    { "name": "tailwindcss", "version": "^3.3.0" },
+    { "name": "tailwindcss-animate", "version": "^1.0.7" },
+    { "name": "autoprefixer", "version": "^10.4.16" },
+    { "name": "postcss", "version": "^8.4.31" }
+  ],
+  "envVars": [
+    {
+      "name": "NEXT_PUBLIC_SUI_NETWORK",
+      "description": "SUI network (mainnet, testnet, devnet, or localnet)"
+    },
+    {
+      "name": "NEXT_PUBLIC_SUI_RPC_URL",
+      "description": "Custom SUI RPC endpoint URL (optional)"
+    }
+  ],
+  "files": {
+    "example.tsx": "src/pages/sui.tsx",
+    "SuiProvider.tsx": "src/components/SuiProvider.tsx",
+    "SuiWalletButton.tsx": "src/components/SuiWalletButton.tsx",
+    "README.md": "README.md"
+  },
+  "tags": ["blockchain", "web3", "wallet"],
+  "visible": true
+}

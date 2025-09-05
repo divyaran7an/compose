@@ -1,0 +1,270 @@
+{
+  "networks": {
+    "ethereum": {
+      "chainId": "0x1",
+      "chainIdDecimal": 1,
+      "name": "Ethereum Mainnet",
+      "shortName": "ethereum",
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://ethereum-rpc.publicnode.com",
+        "public": "https://eth.llamarpc.com",
+        "env": "NEXT_PUBLIC_ETHEREUM_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://etherscan.io"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_ethereum.jpg"],
+      "isTestnet": false,
+      "category": "mainnet",
+      "layer": "L1",
+      "faucets": []
+    },
+    "ethereum-sepolia": {
+      "chainId": "0xaa36a7",
+      "chainIdDecimal": 11155111,
+      "name": "Ethereum Sepolia",
+      "shortName": "ethereum-sepolia",
+      "nativeCurrency": {
+        "name": "Sepolia Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://ethereum-sepolia.publicnode.com",
+        "public": "https://rpc.sepolia.org",
+        "env": "NEXT_PUBLIC_ETHEREUM_SEPOLIA_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://sepolia.etherscan.io"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_ethereum.jpg"],
+      "isTestnet": true,
+      "category": "testnet",
+      "layer": "L1",
+      "faucets": [
+        "https://sepoliafaucet.com",
+        "https://www.alchemy.com/faucets/ethereum-sepolia",
+        "https://cloud.google.com/application/web3/faucet/ethereum/sepolia"
+      ]
+    },
+    "base": {
+      "chainId": "0x2105",
+      "chainIdDecimal": 8453,
+      "name": "Base",
+      "shortName": "base",
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://mainnet.base.org",
+        "public": "https://base.llamarpc.com",
+        "env": "NEXT_PUBLIC_BASE_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://basescan.org"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_base.jpg"],
+      "isTestnet": false,
+      "category": "mainnet",
+      "layer": "L2",
+      "parentChain": "ethereum",
+      "faucets": []
+    },
+    "base-sepolia": {
+      "chainId": "0x14a34",
+      "chainIdDecimal": 84532,
+      "name": "Base Sepolia",
+      "shortName": "base-sepolia",
+      "nativeCurrency": {
+        "name": "Sepolia Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://sepolia.base.org",
+        "public": "https://base-sepolia.publicnode.com",
+        "env": "NEXT_PUBLIC_BASE_SEPOLIA_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://sepolia.basescan.org"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_base.jpg"],
+      "isTestnet": true,
+      "category": "testnet",
+      "layer": "L2",
+      "parentChain": "ethereum-sepolia",
+      "faucets": [
+        "https://www.coinbase.com/faucets/base-ethereum-sepolia-faucet",
+        "https://www.alchemy.com/faucets/base-sepolia"
+      ]
+    },
+    "arbitrum": {
+      "chainId": "0xa4b1",
+      "chainIdDecimal": 42161,
+      "name": "Arbitrum One",
+      "shortName": "arbitrum",
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://rpc.ankr.com/arbitrum",
+        "public": "https://arbitrum.llamarpc.com",
+        "env": "NEXT_PUBLIC_ARBITRUM_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://arbiscan.io"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_arbitrum.jpg"],
+      "isTestnet": false,
+      "category": "mainnet",
+      "layer": "L2",
+      "parentChain": "ethereum",
+      "faucets": []
+    },
+    "arbitrum-sepolia": {
+      "chainId": "0x66eee",
+      "chainIdDecimal": 421614,
+      "name": "Arbitrum Sepolia",
+      "shortName": "arbitrum-sepolia",
+      "nativeCurrency": {
+        "name": "Sepolia Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://sepolia-rollup.arbitrum.io/rpc",
+        "public": "https://arbitrum-sepolia.publicnode.com",
+        "env": "NEXT_PUBLIC_ARBITRUM_SEPOLIA_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://sepolia.arbiscan.io"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_arbitrum.jpg"],
+      "isTestnet": true,
+      "category": "testnet",
+      "layer": "L2",
+      "parentChain": "ethereum-sepolia",
+      "faucets": [
+        "https://www.alchemy.com/faucets/arbitrum-sepolia"
+      ]
+    },
+    "optimism": {
+      "chainId": "0xa",
+      "chainIdDecimal": 10,
+      "name": "Optimism",
+      "shortName": "optimism",
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://optimism-rpc.publicnode.com",
+        "public": "https://optimism.llamarpc.com",
+        "env": "NEXT_PUBLIC_OPTIMISM_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://optimistic.etherscan.io"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_optimism.jpg"],
+      "isTestnet": false,
+      "category": "mainnet",
+      "layer": "L2",
+      "parentChain": "ethereum",
+      "faucets": []
+    },
+    "optimism-sepolia": {
+      "chainId": "0xaa37dc",
+      "chainIdDecimal": 11155420,
+      "name": "Optimism Sepolia",
+      "shortName": "optimism-sepolia",
+      "nativeCurrency": {
+        "name": "Sepolia Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://sepolia.optimism.io",
+        "public": "https://optimism-sepolia.publicnode.com",
+        "env": "NEXT_PUBLIC_OPTIMISM_SEPOLIA_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://sepolia-optimism.etherscan.io"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_optimism.jpg"],
+      "isTestnet": true,
+      "category": "testnet",
+      "layer": "L2",
+      "parentChain": "ethereum-sepolia",
+      "faucets": [
+        "https://www.alchemy.com/faucets/optimism-sepolia"
+      ]
+    },
+    "polygon": {
+      "chainId": "0x89",
+      "chainIdDecimal": 137,
+      "name": "Polygon",
+      "shortName": "polygon",
+      "nativeCurrency": {
+        "name": "POL",
+        "symbol": "POL",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://polygon-rpc.com",
+        "public": "https://polygon.llamarpc.com",
+        "env": "NEXT_PUBLIC_POLYGON_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://polygonscan.com"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_polygon.jpg"],
+      "isTestnet": false,
+      "category": "mainnet",
+      "layer": "L1",
+      "faucets": []
+    },
+    "polygon-amoy": {
+      "chainId": "0x13882",
+      "chainIdDecimal": 80002,
+      "name": "Polygon Amoy",
+      "shortName": "polygon-amoy",
+      "nativeCurrency": {
+        "name": "POL",
+        "symbol": "POL",
+        "decimals": 18
+      },
+      "rpcUrls": {
+        "default": "https://rpc-amoy.polygon.technology",
+        "public": "https://polygon-amoy.publicnode.com",
+        "env": "NEXT_PUBLIC_POLYGON_AMOY_RPC_URL"
+      },
+      "blockExplorerUrls": ["https://amoy.polygonscan.com"],
+      "iconUrls": ["https://icons.llamao.fi/icons/chains/rsz_polygon.jpg"],
+      "isTestnet": true,
+      "category": "testnet",
+      "layer": "L1",
+      "faucets": [
+        "https://faucet.polygon.technology"
+      ]
+    }
+  },
+  "categories": {
+    "mainnet": {
+      "name": "Mainnet Networks",
+      "description": "Production networks with real value"
+    },
+    "testnet": {
+      "name": "Testnet Networks", 
+      "description": "Test networks for development and testing"
+    }
+  },
+  "providers": {
+    "alchemy": {
+      "name": "Alchemy",
+      "website": "https://www.alchemy.com",
+      "supportedNetworks": ["ethereum", "ethereum-sepolia", "base", "base-sepolia", "arbitrum", "arbitrum-sepolia", "optimism", "optimism-sepolia", "polygon", "polygon-amoy"]
+    },
+    "infura": {
+      "name": "Infura",
+      "website": "https://infura.io",
+      "supportedNetworks": ["ethereum", "ethereum-sepolia", "arbitrum", "arbitrum-sepolia", "optimism", "optimism-sepolia", "polygon", "polygon-amoy"]
+    },
+    "quicknode": {
+      "name": "QuickNode",
+      "website": "https://www.quicknode.com",
+      "supportedNetworks": ["ethereum", "ethereum-sepolia", "base", "base-sepolia", "arbitrum", "arbitrum-sepolia", "optimism", "optimism-sepolia", "polygon", "polygon-amoy"]
+    }
+  }
+}

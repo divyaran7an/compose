@@ -1,0 +1,80 @@
+{
+  "name": "evm",
+  "displayName": "EVM Multi-Network",
+  "description": "Multi-network EVM blockchain integration supporting Ethereum, Base, Arbitrum, Optimism, Polygon and other EVM-compatible chains",
+  "packages": [
+    { "name": "ethers", "version": "^6.0.0" },
+    { "name": "next", "version": "^14.0.0" },
+    { "name": "react", "version": "^18.0.0" },
+    { "name": "react-dom", "version": "^18.0.0" },
+    { "name": "class-variance-authority", "version": "^0.7.1" },
+    { "name": "clsx", "version": "^2.0.0" },
+    { "name": "tailwind-merge", "version": "^2.0.0" },
+    { "name": "lucide-react", "version": "^0.263.1" },
+    { "name": "@radix-ui/react-slot", "version": "^1.1.0" },
+    { "name": "@radix-ui/react-label", "version": "^2.1.0" },
+    { "name": "@radix-ui/react-select", "version": "^2.1.0" },
+    { "name": "@radix-ui/react-separator", "version": "^1.1.0" }
+  ],
+  "devPackages": [
+    { "name": "@types/node", "version": "^20.0.0" },
+    { "name": "@types/react", "version": "^18.0.0" },
+    { "name": "@types/react-dom", "version": "^18.0.0" },
+    { "name": "typescript", "version": "^5.0.0" },
+    { "name": "autoprefixer", "version": "^10.4.16" },
+    { "name": "postcss", "version": "^8.4.31" },
+    { "name": "tailwindcss", "version": "^3.3.0" },
+    { "name": "tailwindcss-animate", "version": "^1.0.7" },
+    { "name": "eslint", "version": "^8.0.0" },
+    { "name": "eslint-config-next", "version": "^14.0.0" }
+  ],
+  "envVars": [
+    {
+      "name": "NEXT_PUBLIC_ETHEREUM_RPC_URL",
+      "description": "Ethereum mainnet RPC endpoint (e.g., https://eth-mainnet.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_ETHEREUM_SEPOLIA_RPC_URL", 
+      "description": "Ethereum Sepolia testnet RPC endpoint (e.g., https://eth-sepolia.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_BASE_RPC_URL",
+      "description": "Base mainnet RPC endpoint (e.g., https://base-mainnet.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_BASE_SEPOLIA_RPC_URL",
+      "description": "Base Sepolia testnet RPC endpoint (e.g., https://base-sepolia.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_ARBITRUM_RPC_URL",
+      "description": "Arbitrum One mainnet RPC endpoint (e.g., https://arb-mainnet.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_ARBITRUM_SEPOLIA_RPC_URL",
+      "description": "Arbitrum Sepolia testnet RPC endpoint (e.g., https://arb-sepolia.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_OPTIMISM_RPC_URL",
+      "description": "Optimism mainnet RPC endpoint (e.g., https://opt-mainnet.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_OPTIMISM_SEPOLIA_RPC_URL",
+      "description": "Optimism Sepolia testnet RPC endpoint (e.g., https://opt-sepolia.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_POLYGON_RPC_URL",
+      "description": "Polygon mainnet RPC endpoint (e.g., https://polygon-mainnet.g.alchemy.com/v2/YOUR-API-KEY)"
+    },
+    {
+      "name": "NEXT_PUBLIC_POLYGON_AMOY_RPC_URL",
+      "description": "Polygon Amoy testnet RPC endpoint (e.g., https://polygon-amoy.g.alchemy.com/v2/YOUR-API-KEY)"
+    }
+  ],
+  "files": {
+    "example.tsx": "src/pages/evm.tsx",
+    "networks.json": "src/config/networks.json",
+    "NetworkManager.ts": "src/utils/NetworkManager.ts",
+    "networkUtils.ts": "src/utils/networkUtils.ts",
+    "README.md": "README.md"
+  }
+} 

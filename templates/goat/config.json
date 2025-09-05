@@ -1,0 +1,67 @@
+{
+  "name": "goat",
+  "displayName": "GOAT AI Agent",
+  "description": "Deploy an AI agent that can send tokens, swap assets, check balances, and execute onchain transactions through natural conversation",
+  "packages": [
+    { "name": "@goat-sdk/core", "version": "0.4.9" },
+    { "name": "@goat-sdk/adapter-vercel-ai", "version": "0.2.10" },
+    { "name": "@goat-sdk/wallet-solana", "version": "0.2.11" },
+    { "name": "@goat-sdk/wallet-evm", "version": "0.2.11" },
+    { "name": "@goat-sdk/wallet-viem", "version": "0.2.12" },
+    { "name": "@goat-sdk/plugin-spl-token", "version": "0.2.14" },
+    { "name": "@goat-sdk/plugin-jupiter", "version": "0.2.14" },
+    { "name": "@goat-sdk/plugin-erc20", "version": "0.2.14" },
+    { "name": "@solana/web3.js", "version": "^1.98.0" },
+    { "name": "viem", "version": "2.23.4" },
+    { "name": "bs58", "version": "^5.0.0" },
+    { "name": "zod", "version": "3.23.8" },
+    { "name": "ai", "version": "~4.0.3" },
+    { "name": "@ai-sdk/openai", "version": "~1.0.4" },
+    { "name": "next", "version": "^14.0.0" },
+    { "name": "react", "version": "^18.0.0" },
+    { "name": "react-dom", "version": "^18.0.0" },
+    { "name": "class-variance-authority", "version": "^0.7.1" },
+    { "name": "clsx", "version": "^2.0.0" },
+    { "name": "tailwind-merge", "version": "^2.0.0" },
+    { "name": "lucide-react", "version": "^0.263.1" },
+    { "name": "@radix-ui/react-slot", "version": "^1.1.0" }
+  ],
+  "devPackages": [
+    { "name": "@types/node", "version": "^20.0.0" },
+    { "name": "@types/react", "version": "^18.0.0" },
+    { "name": "@types/react-dom", "version": "^18.0.0" },
+    { "name": "typescript", "version": "^5.0.0" },
+    { "name": "tailwindcss", "version": "^3.3.0" },
+    { "name": "tailwindcss-animate", "version": "^1.0.7" },
+    { "name": "autoprefixer", "version": "^10.4.16" },
+    { "name": "postcss", "version": "^8.4.31" }
+  ],
+  "envVars": [
+    {
+      "name": "OPENAI_API_KEY",
+      "description": "OpenAI API key for the blockchain AI agent"
+    },
+    {
+      "name": "GOAT_CHAIN",
+      "description": "Blockchain to use (solana or evm)"
+    },
+    {
+      "name": "WALLET_PRIVATE_KEY",
+      "description": "Your EVM private key (required if GOAT_CHAIN=evm)"
+    },
+    {
+      "name": "SOLANA_PRIVATE_KEY",
+      "description": "Your Solana private key in base58 format (required if GOAT_CHAIN=solana)"
+    },
+    {
+      "name": "RPC_PROVIDER_URL",
+      "description": "RPC endpoint URL for the selected blockchain"
+    }
+  ],
+  "files": {
+    "example.tsx": "src/pages/goat.tsx",
+    "api-goat.ts": "src/pages/api/goat.ts",
+    "wallet-config.ts": "src/utils/wallet-config.ts",
+    "README.md": "README.md"
+  }
+}
