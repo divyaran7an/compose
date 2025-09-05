@@ -1,17 +1,16 @@
 # Capx Compose
+[![npm version](https://img.shields.io/npm/v/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
+[![Downloads](https://img.shields.io/npm/dm/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
+[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/capx)
+[![X Follow](https://img.shields.io/twitter/follow/0xCapx?style=social)](https://x.com/0xCapx)
 
-[![Capx Compose](./assets/banner.png)](https://www.loom.com/share/42f661f237a54e2e80e4560a8f69cbb1)
 
 A modular CLI tool for scaffolding AI apps with pre-configured integrations and best practices. Built for the AI IDE era with working examples you can import to Cursor, Claude, or any AI editor to start building immediately.
 
 ```bash
 npx capx-compose my-app
 ```
-
-[![npm version](https://img.shields.io/npm/v/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
-[![Downloads](https://img.shields.io/npm/dm/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/capx)
-[![X Follow](https://img.shields.io/twitter/follow/0xCapx?style=social)](https://x.com/0xCapx)
+[![Capx Compose](./assets/banner.png)](https://www.loom.com/share/42f661f237a54e2e80e4560a8f69cbb1)
 
 ## Table of Contents
 
