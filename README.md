@@ -1,4 +1,4 @@
-# capx-compose
+# Capx Compose
 
 A modular CLI tool for scaffolding AI apps with pre-configured integrations and best practices. Built for the AI IDE era with working examples you can import to Cursor, Claude, or any AI editor to start building immediately.
 
