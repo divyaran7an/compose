@@ -1,15 +1,16 @@
-# capx-compose
+# Capx Compose
+
+[![npm version](https://img.shields.io/npm/v/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
+[![Downloads](https://img.shields.io/npm/dm/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
+[![X Follow](https://img.shields.io/twitter/follow/0xCapx?style=social)](https://x.com/0xCapx)
+
 
 A modular CLI tool for scaffolding AI apps with pre-configured integrations and best practices. Built for the AI IDE era with working examples you can import to Cursor, Claude, or any AI editor to start building immediately.
 
 ```bash
 npx capx-compose my-app
 ```
-
-[![npm version](https://img.shields.io/npm/v/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
-[![Downloads](https://img.shields.io/npm/dm/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/capx)
-[![X Follow](https://img.shields.io/twitter/follow/0xCapx?style=social)](https://x.com/0xCapx)
+[![Capx Compose](./assets/banner.png)](https://www.loom.com/share/42f661f237a54e2e80e4560a8f69cbb1)
 
 ## Table of Contents
 
@@ -259,7 +260,7 @@ Test locally with `capx-compose test-app --plugins="your-plugin" --skip-install`
 
 ## About Capx
 
-Capx is building infrastructure for the convergence of AI and blockchain. capx-compose is part of our commitment to making this intersection more accessible to developers. Learn more at [capx.ai](https://capx.ai).
+Capx is a decentralized protocol powering the AI builder economy by enabling solopreneurs to build, ship, host and scale AI apps, as well as tokenize and launch them on Capx.
 
 ## License
 
