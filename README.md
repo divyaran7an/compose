@@ -8,7 +8,7 @@ npx capx-compose my-app
 
 [![npm version](https://img.shields.io/npm/v/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
 [![Downloads](https://img.shields.io/npm/dm/capx-compose.svg)](https://www.npmjs.com/package/capx-compose)
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/capx)
+[![Discord](https://img.shields.io/discord/capx?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/capx)
 [![X Follow](https://img.shields.io/twitter/follow/0xCapx?style=social)](https://x.com/0xCapx)
 
 ## Table of Contents
